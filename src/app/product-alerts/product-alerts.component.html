@@ -1,0 +1,4 @@
+<!-- Valida que el producto exista y que su precio sea mayor a 700 -->
+<p *ngIf="product && product.price > 700">
+    <button type="button" (click)="notify.emit()"> Notifícame</button>
+</p>

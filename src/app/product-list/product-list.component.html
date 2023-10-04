@@ -1,0 +1,34 @@
+<h2>Products</h2>
+
+
+<div *ngFor="let product of products">
+    <h3>
+        <a [title]="product.name+ 'detalles'"
+            [routerLink]=" ['/products', product.id]" >
+            {{ product.name }}
+        </a>
+    </h3>
+
+    <p>
+        Precio: {{product.price | currency}}
+    </p>
+    <!-- La directiva ngIf valida si la cadena está o no vacía en este caso. -->
+    <p *ngIf="product.description">
+        Descripción: {{ product.description }}
+    </p>
+    <!-- <img src="product.photo"> -->
+
+
+    <button type="button" (click)="share(product.name)">
+        Compartir
+    </button>
+
+    <app-product-alerts 
+    [product]="product"
+    (notify)="onNotify()"></app-product-alerts>
+    <!-- *Paréntesis sacan la información y los corchetes dan ingreso* -->
+
+    <button type="button" [routerLink]=" ['/products', product.id]">
+        Detalles
+    </button>
+</div>
