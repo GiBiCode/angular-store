@@ -23,7 +23,10 @@ export class ProductDetailsComponent implements OnInit {
 
       this.product = products.find(product => product.id === productIdFromRoute)
   }
-
+  onNotify(){
+    window.alert('Se le notificará cuando el producto salga a la venta')
+  }
+  
   addToCart(product:Product){
     this.cartService.addToCart(product)
     console.log("Tu producto ha sido añadido correctamente.")

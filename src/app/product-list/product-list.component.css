@@ -30,10 +30,10 @@ can be found in the LICENSE file at https://angular.io/license
     width: 90vw;
     height: 150vh;
   }
-  mat-grid-tile:hover {
+  /* mat-grid-tile:hover {
     margin-top: 0;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
-  }
+  } */
   
   mat-card {
     width: 100% !important;
@@ -83,8 +83,14 @@ can be found in the LICENSE file at https://angular.io/license
 
   mat-card-actions button {
     margin: 0 10px;
+    
 }
 
+.my-custom-button {
+  height: 30px;
+  width: 55px;
+  line-height: 36px; 
+}
 
   
 

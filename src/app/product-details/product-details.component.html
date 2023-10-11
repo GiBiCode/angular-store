@@ -20,6 +20,7 @@
             <img [src]="product.photo" [alt]="product.name"> 
         </div>
             <mat-card-actions>
+                <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
                 <button type="button" (click)="addToCart(product)">Comprar</button>
                 <button type="button" [routerLink]="['/']">Volver</button>
             </mat-card-actions>
