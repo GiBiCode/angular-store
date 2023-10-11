@@ -1,0 +1,12 @@
+.thumbnail {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .name, 
+  .price {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px; 
+  }

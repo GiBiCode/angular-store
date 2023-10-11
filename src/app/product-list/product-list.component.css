@@ -5,3 +5,88 @@ Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 */
+.grid-container {
+  margin: 20px; /* Agrega un margen de 20px alrededor del contenedor de la cuadrícula */
+  padding: 16px;
+}
+
+.title {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.title h1 {
+  font-size: 30px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue; 
+}
+
+ mat-grid-list {
+    margin: 10px;
+  }
+  
+ 
+  .grid-layout-custom{
+    width: 90vw;
+    height: 150vh;
+  }
+  mat-grid-tile:hover {
+    margin-top: 0;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  mat-card {
+    width: 100% !important;
+    max-width: 300px!important;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 16px;
+  }
+  
+  mat-card-title {
+     font-size: 16px;
+    margin-bottom: 10px; 
+    background-color: #FAE5D3;  
+    margin-top: 10px;
+    color: blue;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+   
+  }
+ 
+  mat-card-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 16px;
+    font-size: 14px; 
+    line-height: 1.4;
+  }
+  
+  mat-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+  }
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #FAE5D3;
+    height: 100%;
+  }
+
+  mat-card-actions button {
+    margin: 0 10px;
+}
+
+
+  
+
+  
+  

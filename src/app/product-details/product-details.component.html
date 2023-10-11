@@ -1,19 +1,30 @@
-<div *ngIf="product">
-   
-    <h3>
-        <a [title]="product.name+ 'detalles'">
-            {{ product.name }}
-        </a>
-    </h3>
-    <p>
-        Precio: {{product.price | currency}}
-    </p>
-    
-    <p *ngIf="product.description">
-        Descripción: {{ product.description }}
-    </p>
-    
-    <img [src]="product.photo" [alt]="product.name"> 
-    
+<div class="container">
+    <mat-card *ngIf="product"> 
+        <mat-card-title>
+            <h3>
+                <a [title]="product.name+ 'detalles'">
+                {{ product.name }}
+                </a>
+            </h3>
+        </mat-card-title>
+     
+        <mat-card-content>
+        <p>
+            Precio: {{product.price | currency}}
+        </p>
+                
+        <p *ngIf="product.description">
+            Descripción: {{ product.description }}
+        </p>
+        <div mat-card-image>    
+            <img [src]="product.photo" [alt]="product.name"> 
+        </div>
+            <mat-card-actions>
+                <button type="button" (click)="addToCart(product)">Comprar</button>
+                <button type="button" [routerLink]="['/']">Volver</button>
+            </mat-card-actions>
+        
+        </mat-card-content>
+    </mat-card>
 </div>
 

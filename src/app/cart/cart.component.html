@@ -1,0 +1,13 @@
+<h3>Carrito de Compras</h3>
+
+<p>
+    <a routerLink="/shipping">Costos de envío</a>
+</p>
+
+<div class="cart-item" *ngFor="let item of items">
+    <img class="thumbnail" [src]="item.photo" [alt]="item.name">
+    <span>{{item.name}}</span>
+    <span>{{item.price | currency}}</span>
+    
+</div>
+<button type="button" (click)="clearCart()">Vaciar carrito</button>

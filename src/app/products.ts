@@ -55,7 +55,64 @@ export const products = [
     price: 1000,
     description: 'La mejor expereincia de Android en un teléfono grande',
     photo : 'assets/images/ima7.jpg'
-  }
+  },
+  {
+    id: 8,
+    name: 'Pixel 8 XL',
+    price: 1000,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima8.jpg'
+  },
+  {
+    id: 9,
+    name: 'Phone xv',
+    price: 1500,
+    description: 'La mejor experiencia de Android en un teléfono grande',
+    photo : 'assets/images/ima9.jpg'
+  },
+  {
+    id: 10,
+    name: 'Pixel 8 X',
+    price: 800,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima10.jpg'
+  },
+  {
+    id: 11,
+    name: 'Pixel 8 XL',
+    price: 1500,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima11.jpg'
+  },
+  {
+    id: 12,
+    name: 'Pixel 9 XL',
+    price: 1000,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima12.jpg'
+  },
+  {
+    id: 13,
+    name: 'Pixel 9 XL',
+    price: 1000,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima13.jpg'
+  },
+  {
+    id: 14,
+    name: 'Pixel 8 XL',
+    price: 1000,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima14.jpg'
+  },
+  {
+    id: 15,
+    name: 'Pixel 8 XL',
+    price: 1000,
+    description: 'La mejor expereincia de Android en un teléfono grande',
+    photo : 'assets/images/ima15.jpg'
+  },
+ 
   
 ];
 
